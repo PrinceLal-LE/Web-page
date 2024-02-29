@@ -25,7 +25,7 @@
         <div class="container-fluid">
             <span>
                 <img src="Images/logo_-_Copy-removebg-preview.png" alt="Logo">
-                <a class="navbar-brand" href="index.html">Techpro Compsoft Private Limited</a>
+                <a class="navbar-brand" href="#">Techpro Compsoft Private Limited</a>
             </span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -38,19 +38,19 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                        <a class="nav-link active" aria-current="page" href="about_us.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Solution</a>
+                        <a class="nav-link active" aria-current="page" href="solution.html">Solution</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Career</a>
+                        <a class="nav-link active" aria-current="page" href="career.html">Career</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="contact.html ">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Get in touch</a>
+                        <a class="nav-link active" aria-current="page" href="get_in_touch.html">Get in touch</a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="col-lg-12 ">
                     <div class="container inputField">
-                        <form action="sendmail.php" method="post">
+                        <form action="contactus_mail.php" method="post">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <p>Name :</p>
@@ -95,12 +95,12 @@
                                     <p>Message :</p>
                                 </div>
                                 <div class="col-lg-6 col-md-6">
-                                    <textarea name="message" id="messageArea" cols="30" rows="5" placeholder="Message"
+                                    <textarea id="contactMessage" name="message" id="messageArea" cols="30" rows="5" placeholder="Message"
                                         required></textarea>
                                 </div>
                                 <!-- Button -->
                                 <div class="col-lg-12 col-md-12 submitButton">
-                                    <button type="submit">Submit</button>
+                                    <button type="submit" class="footerButton">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -114,7 +114,6 @@
         </div>
     </div>
 
-    <!-- Footer Section -->
     <!-- Footer Section -->
     <div class="container-fluid">
 
@@ -226,23 +225,7 @@
         </div>
     </div>
 
-    <!-- Javascript part -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function emailSend() {
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: 'cuhcseprincelal2@gmail.com',
-                Password: "DAC2BBBAB405AD26B9A2088412ABBC39C2E9",
-                To: 'cuhcseprincelal@gmail.com',
-                From: "cuhcseprincelal2@gmail.com",
-                Subject: "This is the subject",
-                Body: "And this is the body"
-            }).then(
-                message => alert(message)
-            );
-        };
-    </script>
+    
 </body>
 
 </html>

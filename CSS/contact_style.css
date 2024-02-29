@@ -21,13 +21,12 @@
     gap: 20px;
 }
 
-.nav-item a:hover {
+/* .nav-item a:hover {
     border-radius: 5px;
     background-color: #e2db88;
-    border: solid 2px #cfc338;
-    padding: 10px;
+    border: solid 0px #cfc338;
     color: #ff0000 !important;
-}
+} */
 
 /* Contact Section */
 .contactSection {
@@ -50,13 +49,14 @@
 } */
 
 .contactUsRow {
-    position: relative; /* Make sure this is relative or absolute */
+    position: relative;
+    /* Make sure this is relative or absolute */
     /* height: 100vh; */
     display: flex;
     flex-direction: row;
-  }
+}
 
-  .contactUsRow::before {
+.contactUsRow::before {
     content: '';
     position: absolute;
     top: 0;
@@ -67,16 +67,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.2; /* Set your desired opacity here */
-    z-index: -1; /* Ensure the pseudo-element is behind the content */
-  }
+    opacity: 0.2;
+    z-index: -1;
+}
 
-.inputField{
+.inputField {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
 }
-.inputField p{
+
+.inputField p {
     display: flex;
     text-align: center;
     align-items: center;
@@ -85,7 +86,8 @@
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
 }
-.inputField input, textarea{
+
+.inputField input {
     width: 100%;
     display: flex;
     text-align: center;
@@ -95,7 +97,17 @@
     border-radius: 10px;
 }
 
-.submitButton{
+#contactMessage {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    border: solid 0.5px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.submitButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,15 +115,31 @@
     font-size: 24px;
     margin-top: 20px !important;
 
+
 }
-button{
+
+.footerButton {
+    background-color: #cfc338;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px !important;
+    padding: 0px 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+/* .footerButton{
     width: 100px;
     height: 40px;
     border-radius: 10px !important  ;
     background-color: #e2db88;
     color: #ff0000;
     border:none
-}
-#messageArea{
+} */
+#messageArea {
     height: 100px;
 }

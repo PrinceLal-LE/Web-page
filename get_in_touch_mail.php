@@ -1,4 +1,3 @@
-
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -14,6 +13,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $mobile = $_POST['mobile'];
     $message = $_POST['message'];
+    $company_name = $_POST['company_name'];
+    $company_website = $_POST['company_website'];
+    $serviceInterest = $_POST['serviceInterest'];
+    $discoveryMethod = $_POST['discoveryMethod'];
 
     $mail = new PHPMailer();
     $mail->isSMTP();
@@ -45,8 +48,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <li>Mail: " . $email . "</li>
         <li>Mobile Number : " . $mobile . " </li>
         <li>Message : " . $message . " </li>
+        <li>Company Name : " . $company_name . " </li>
+        <li>Company Website : " .$company_website . "</li>
+        <li>Service of Interest : " .$serviceInterest . "</li>
+        <li>Hear about us on : " . $discoveryMethod . "</li>
     </ul>
-    <p>" . $name . ", You will get call back soon!!!</p>";
+    <p><b>" . $name . "</b>, You will get call back soon!!!</p>";
 
     $mail->Body = $mailContent;
 
@@ -54,6 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!$mail->send()) {
         echo 'Message could not be sent. Mailer Error: ' . $mail->ErrorInfo;
     } else {
-        echo 'Message has been sent.';
+        header("Location: thankyou.html");
+        // echo 'Message has been sent.';
     }
 }
