@@ -1,0 +1,40 @@
+.aboutusRow{
+    /* display: flex; */
+    text-align: center;
+    /* height: 100vh; */
+    padding-left: 20px;
+}
+.aboutusRow h1{
+    background-color: #cdc388;
+    color: #ff0000;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;    
+    padding: 20px 70px ;
+    border-radius: 25px;
+}
+.aboutusCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px; */
+    height: 100vh;
+}
+
+.visionList {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    text-align: left;    
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    list-style-type: square;
+}
+p{
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+} 

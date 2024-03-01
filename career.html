@@ -71,7 +71,7 @@
                         </div>
                         <div class="col-lg-12 ">
                             <div class="container ">
-                                <form action="get_in_touch_mail.php" method="post" class="formPart">
+                                <form action="career_send.php" method="post" enctype="multipart/form-data" class="formPart">
                                     <div class="row justify-content-left">
                                         <!-- Name -->
                                         <div class="col-lg-6 col-md-6 pb-4">
@@ -85,7 +85,7 @@
                                         <div class="col-lg-6 col-md-6 pb-4">
                                             <p class="my-0">Mobile Number :</p>
                                             <div class="col-lg-12 col-md-12 pt-2">
-                                                <input type="number" name="mobile" placeholder="Mobile Number" required />
+                                                <input type="text" name="mobile" placeholder="Mobile Number" required />
                                             </div>
                                         </div>
                                          
@@ -100,14 +100,14 @@
                                         <div class="col-lg-6 col-md-6 pb-4">
                                             <p class="my-0">Available Date for Joining :</p>
                                             <div class="col-lg-12 col-md-12 pt-2">
-                                                <input type="date" name="company_name" placeholder="Company Name" required />
+                                                <input type="date" name="date" placeholder="Date" required />
                                             </div>
                                         </div>
                                         <!-- Option for Applying  -->
                                         <div class="col-lg-6 col-md-6 pb-4">
-                                            <label for="discoveryMethod" required>What poisition you are applying for? </label>
+                                            <label for="position" required>What poisition you are applying for? </label>
                                             <div class="col-lg-12 col-md-12 pt-2">
-                                                <select name="discoveryMethod" id="discoveryMethod" class="form-input">
+                                                <select name="position" id="position" class="form-input">
                                                     <option value="purpose">--Select--</option>
                                                     <option value=".Net Developer">.Net Developer</option>
                                                     <option value="Word Press">WordPress Developer</option>
@@ -119,9 +119,9 @@
 
                                         <!-- Option for Employment -->
                                         <div class="col-lg-6 col-md-6 pb-4">
-                                            <label for="serviceInterest">What is your current employment status ?</label>
+                                            <label for="employmentStatus">What is your current employment status ?</label>
                                             <div class="col-lg-12 col-md-12 pt-2 ">
-                                                <select name="serviceInterest" id="serviceInterest" class="form-input">
+                                                <select name="employmentStatus" id="employmentStatus" class="form-input">
                                                     <option value="purpose">--Select yout interest area--</option>
                                                     <option value="Employeed">Employeed</option>
                                                     <option value="Self Employeed">Self Employeed</option>
@@ -134,7 +134,7 @@
                                         <div class="col-lg-6 col-md-6 pb-4">
                                             <p class="my-0">Provide Linkedin Link :</p>
                                             <div class="col-lg-12 col-md-12 pt-2">
-                                                <input type="link" name="linkedin" placeholder="Linkedin Profile Link"
+                                                <input type="url" name="linkedin" placeholder="Linkedin Profile Link"
                                                     required />
                                             </div>
                                         </div>
@@ -142,14 +142,14 @@
                                         <div class="col-lg-6 col-md-6 pb-4">
                                             <p class="my-0">Your Resume/ CV :</p>
                                             <div class="col-lg-12 col-md-12 pt-2">
-                                                <input type="file" name="filename" id="myFile" placeholder="Resume" required />
+                                                <input type="file" name="file" id="myFile" placeholder="Resume" required />
                                             </div>
                                         </div>
                                         <!-- Reference  -->
                                         <div class="col-lg-6 col-md-6 pb-4">
                                             <p class="my-0">Do you have reference (optional) :</p>
                                             <div class="col-lg-12 col-md-12 pt-2">
-                                                <input type="text" name="referenceName" placeholder="Full Name" required />
+                                                <input type="text" name="referenceName" placeholder="Full Name"  />
                                             </div>
                                         </div>
                                          
@@ -157,7 +157,7 @@
                                         <div class="col-lg-6 col-md-6 pb-4">
                                             <p class="my-0">Reference Email :</p>
                                             <div class="col-lg-12 col-md-12 pt-2">
-                                                <input type="email" name="referenceEmail" placeholder=" john@example.com" required />
+                                                <input type="email" name="referenceEmail" placeholder=" john@example.com"  />
                                             </div>
                                         </div>
                                        
@@ -167,7 +167,7 @@
                                             <button type="reset" class="footerButton">Reset</button>
                                         </div>
                                         <div class="col-lg-6 col-md-6 pb-4">
-                                            <button type="reset" class="footerButton">submit</button>
+                                            <button type="submit" class="footerButton">submit</button>
                                         </div>
                                     </div>
                                 </form>
@@ -181,7 +181,6 @@
 
     <!-- Footer Section -->
     <div class="container-fluid">
-
         <div class="row  footerSection">
             <div class="col-lg-4 col-sm-6">
                 <div class="quickLinks">
